@@ -1,0 +1,676 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f3faf5;
+    color: #183b2a;
+    line-height: 1.6;
+}
+
+.header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #dce9df;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-contenedor {
+    max-width: 1200px;
+    min-height: 92px;
+    margin: auto;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    display: block;
+}
+
+.nombre-colegio {
+    min-width: 235px;
+}
+
+.nombre-colegio h1 {
+    color: #165c35;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.nombre-colegio span {
+    color: #6b7d72;
+    font-size: 12px;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.menu a {
+    color: #315b43;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 9px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #e4f2e8;
+    color: #0f6736;
+}
+
+.hero {
+    background: linear-gradient(135deg, #e5f5e9, #f7fcf8);
+    padding: 85px 25px;
+}
+
+.hero-contenido {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.6fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.etiqueta {
+    display: inline-block;
+    background: #d4ecdc;
+    color: #176437;
+    padding: 7px 13px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: #124b2c;
+    font-size: 46px;
+    line-height: 1.15;
+    max-width: 720px;
+    margin-bottom: 15px;
+}
+
+.hero-texto > p:not(.etiqueta):not(.descripcion) {
+    color: #32714b;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.descripcion {
+    color: #66776d;
+    max-width: 650px;
+    margin-top: 15px;
+}
+
+.hero-botones {
+    margin-top: 30px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.boton {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.boton.principal {
+    background: #176437;
+    color: white;
+}
+
+.boton.principal:hover {
+    background: #104b29;
+    transform: translateY(-2px);
+}
+
+.boton.secundario {
+    background: white;
+    color: #176437;
+    border: 1px solid #b8d5c1;
+}
+
+.boton.secundario:hover {
+    background: #edf7f0;
+}
+
+.hero-tarjeta {
+    background: white;
+    border: 1px solid #d9e9dd;
+    border-radius: 20px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(33, 87, 51, 0.08);
+}
+
+.hero-tarjeta img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 18px;
+}
+
+.hero-tarjeta h3 {
+    color: #155b34;
+    font-size: 22px;
+}
+
+.hero-tarjeta p {
+    color: #5c7465;
+    font-size: 14px;
+}
+
+.hero-tarjeta span {
+    color: #82a08d;
+    font-size: 12px;
+}
+
+.seccion {
+    max-width: 1200px;
+    margin: auto;
+    padding: 85px 25px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-seccion span {
+    color: #3b8a58;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.titulo-seccion h2 {
+    color: #164e2f;
+    font-size: 34px;
+    margin-top: 7px;
+}
+
+.titulo-seccion p {
+    color: #708077;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.tarjetas-cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.curso {
+    background: white;
+    border: 1px solid #dce9df;
+    border-radius: 18px;
+    padding: 30px;
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+    transition: 0.3s;
+}
+
+.curso:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(38, 90, 55, 0.08);
+}
+
+.numero-curso {
+    width: 55px;
+    height: 55px;
+    border-radius: 13px;
+    background: #dcefe2;
+    color: #176437;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.curso h3 {
+    color: #174d2f;
+    font-size: 24px;
+    margin-bottom: 7px;
+}
+
+.curso p {
+    color: #6b796f;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.boton-card {
+    display: inline-block;
+    text-decoration: none;
+    color: #176437;
+    background: #edf7f0;
+    padding: 9px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.boton-card:hover {
+    background: #dcefe2;
+}
+
+.horario-seccion {
+    max-width: 1400px;
+}
+
+.horario-seccion.verde {
+    background: #edf7f0;
+    max-width: none;
+    padding-left: max(25px, calc((100% - 1350px) / 2));
+    padding-right: max(25px, calc((100% - 1350px) / 2));
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #d9e8dd;
+    box-shadow: 0 8px 25px rgba(30, 78, 44, 0.05);
+}
+
+.tabla-horarios {
+    width: 100%;
+    min-width: 1050px;
+    border-collapse: collapse;
+}
+
+.tabla-horarios th,
+.tabla-horarios td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #e3ece6;
+    border-right: 1px solid #e3ece6;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.tabla-horarios thead th {
+    background: #176437;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.tabla-horarios tbody th {
+    background: #edf7f0;
+    color: #285c3c;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.tabla-horarios td {
+    color: #56675d;
+    line-height: 1.45;
+}
+
+.tabla-horarios tbody tr:hover td {
+    background: #f6fbf7;
+}
+
+.comunicados {
+    background: #f8fcf9;
+    max-width: none;
+    padding-left: max(25px, calc((100% - 1200px) / 2));
+    padding-right: max(25px, calc((100% - 1200px) / 2));
+}
+
+.comunicados-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.comunicado {
+    background: white;
+    border: 1px solid #dce9df;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    gap: 16px;
+}
+
+.icono {
+    width: 48px;
+    height: 48px;
+    background: #e2f1e6;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    flex-shrink: 0;
+}
+
+.comunicado h3 {
+    color: #215638;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.comunicado p {
+    color: #718077;
+    font-size: 13px;
+}
+
+.contacto {
+    max-width: 1200px;
+}
+
+.contacto-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.datos-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dato {
+    background: white;
+    border: 1px solid #dce9df;
+    border-radius: 13px;
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.dato-icono {
+    width: 45px;
+    height: 45px;
+    background: #e3f2e7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    flex-shrink: 0;
+}
+
+.dato h3 {
+    color: #1b5835;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.dato p {
+    color: #68776e;
+    font-size: 13px;
+}
+
+.facebook {
+    color: #1b6839;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.facebook:hover {
+    text-decoration: underline;
+}
+
+.ubicacion-boton {
+    display: block;
+    text-align: center;
+    background: #176437;
+    color: white;
+    text-decoration: none;
+    padding: 13px 18px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.ubicacion-boton:hover {
+    background: #104b29;
+}
+
+.contacto-formulario {
+    background: white;
+    border: 1px solid #dce9df;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.contacto-formulario h3 {
+    color: #194f30;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.contacto-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-formulario label {
+    color: #42634e;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d5e3d9;
+    border-radius: 8px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    margin-bottom: 15px;
+    background: #fbfdfb;
+}
+
+.contacto-formulario input:focus,
+.contacto-formulario textarea:focus {
+    border-color: #6ca77d;
+}
+
+.contacto-formulario textarea {
+    resize: vertical;
+}
+
+.contacto-formulario button {
+    border: none;
+    background: #176437;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contacto-formulario button:hover {
+    background: #104b29;
+}
+
+.footer {
+    background: #123c27;
+    color: white;
+    padding: 30px 25px;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer h3 {
+    font-size: 18px;
+}
+
+.footer p {
+    color: #c3d6c9;
+    font-size: 12px;
+}
+
+@media (max-width: 950px) {
+
+    .header-contenedor {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 12px 20px;
+    }
+
+    .nombre-colegio {
+        min-width: auto;
+    }
+
+    .menu {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-contenido {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .tarjetas-cursos {
+        grid-template-columns: 1fr;
+    }
+
+    .comunicados-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header-contenedor {
+        min-height: auto;
+    }
+
+    .logo {
+        width: 58px;
+        height: 58px;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .nombre-colegio h1 {
+        font-size: 17px;
+    }
+
+    .nombre-colegio span {
+        font-size: 10px;
+    }
+
+    .menu {
+        gap: 2px;
+    }
+
+    .menu a {
+        font-size: 11px;
+        padding: 7px 8px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 31px;
+    }
+
+    .hero-texto > p:not(.etiqueta):not(.descripcion) {
+        font-size: 17px;
+    }
+
+    .hero-tarjeta img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .seccion {
+        padding: 60px 20px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 28px;
+    }
+
+    .curso {
+        padding: 22px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
