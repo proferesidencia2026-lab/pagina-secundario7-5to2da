@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Escolar - 2° 1° y 2° 2°</title>
+    <!-- Vinculación del archivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado con Logo del Colegio y Redes Sociales -->
+    <header>
+        <div class="contenedor-header">
+            <img src="OIP colegio N7.webp" alt="Escudo Colegio Secundario N° 7 Perico" class="logo-colegio">
+            <div class="texto-header">
+                <h1>Colegio Secudario N7</h1>
+                <p>Cursos: 2° 1° (Segunda Primera) y 2° 2° (Segunda Segunda)</p>
+            </div>
+        </div>
+        
+        <nav>
+            <a href="#curso-21" class="btn-nav">2° 1° (Segunda Primera)</a>
+            <a href="#curso-22" class="btn-nav">2° 2° (Segunda Segunda)</a>
+            <a href="#horario-semanal" class="btn-nav">Horario Semanal</a>
+            <a href="#proyectos" class="btn-nav">Proyectos</a>
+            <!-- Botón directo al Facebook Oficial -->
+            <a href="https://www.facebook.com/profile.php?id=100057082345529" target="_blank" rel="noopener noreferrer" class="btn-nav btn-facebook">
+                📘 Facebook Oficial
+            </a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+
+        <!-- FOTO GENERAL DE LA ESCUELA -->
+        <section>
+            <h2 class="seccion-titulo" style="text-align: center;">Fotografía Institucional / General</h2>
+            
+            <div class="contenedor-foto-grupo foto-ampliable">
+                <img src="DSC_0190.jpg" alt="Colegio Secundario N° 7 Maestro Mario H. Pérez" onclick="abrirImagen(this.src, this.alt)">
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE LOS CURSOS EN PARALELO/HORIZONTAL -->
+        <h2 class="seccion-titulo">Información por Cursos</h2>
+        
+        <div class="cursos-grid">
+
+            <!-- CURSO: 2° 1° -->
+            <article class="tarjeta-curso" id="curso-21">
+                <h3>2° 1° (Segunda Primera)</h3>
+                
+                <div class="contenedor-foto-grupo foto-ampliable">
+                    <img src="WhatsApp Image 2026-08-20 at 20.10.37.jpeg" alt="Aula de 2° 1° con mural patrio" onclick="abrirImagen(this.src, this.alt)">
+                </div>
+
+                <div class="datos-principales">
+                    <p><strong>Preceptor/a:</strong> Basques Mario</p>
+                    <p><strong>Turno:</strong> Mañana / Tarde</p>
+                </div>
+
+                <h4 style="margin-top: 20px;">Materias y Días de Cursada:</h4>
+                <div class="lista-materias">
+
+                    <div class="tarjeta-materia">
+                        <h5>📌 Historia</h5>
+                        <p><strong>Profesor/a:</strong> Vega Griselda</p>
+                        <div style="margin-top: 10px; font-size: 0.88rem;">
+                            <p><strong>🗓️ Días de Clase:</strong></p>
+                            <ul style="margin-left: 20px; list-style-type: disc;">
+                                <li><strong>Lunes:</strong> 08:00 - 09:40</li>
+                                <li><strong>Viernes:</strong> 12:20 - 13:00</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-materia">
+                        <h5>📌 Lengua y Literatura</h5>
+                        <p><strong>Profesor/a:</strong> Janco Maria</p>
+                        <div style="margin-top: 10px; font-size: 0.88rem;">
+                            <p><strong>🗓️ Días de clase:</strong></p>
+                            <ul style="margin-left: 20px; list-style-type: disc;">
+                                <li><strong>Lunes:</strong> 09:30 - 10:50 (Aula 1)</li>
+                                <li><strong>Jueves:</strong> 11:00 - 11:40 (Aula 1)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-materia">
+                        <h5>📌 GEOGRAFIA</h5>
+                        <p><strong>Profesor/a:</strong> Ocedo, Genoveba</p>
+                        <div style="margin-top: 10px; font-size: 0.88rem;">
+                            <p><strong>🗓️ Días de clase:</strong></p>
+                            <ul style="margin-left: 20px; list-style-type: disc;">
+                                <li><strong>Día 1 (ej: Lunes):</strong> 00:00 - 00:00 (Aula)</li>
+                                <li><strong>Día 2 (ej: Miércoles):</strong> 00:00 - 00:00 (Aula)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- CURSO: 2° 2° -->
+            <article class="tarjeta-curso" id="curso-22">
+                <h3>2° 2° (Segunda Segunda)</h3>
+                
+                <div class="contenedor-foto-grupo foto-ampliable">
+                    <img src="WhatsApp Image 2026-08-20 at 20.10.38.jpeg" alt="Aula de 2° 2° con murales prehispánicos" onclick="abrirImagen(this.src, this.alt)">
+                </div>
+
+                <div class="datos-principales">
+                    <p><strong>Preceptor/a:</strong> Basques Mario</p>
+                    <p><strong>Turno:</strong> Mañana / Tarde</p>
+                </div>
+
+                <h4 style="margin-top: 20px;">Materias y Días de Cursada:</h4>
+                <div class="lista-materias">
+
+                    <div class="tarjeta-materia">
+                        <h5>📌 Historia</h5>
+                        <p><strong>Profesor/a:</strong> Vega Griselda</p>
+                        <div style="margin-top: 10px; font-size: 0.88rem;">
+                            <p><strong>🗓️ Días de clase:</strong></p>
+                            <ul style="margin-left: 20px; list-style-type: disc;">
+                                <li><strong>Viernes:</strong> 09:30 - 10:50</li>
+                                <li><strong>Jueves:</strong> 12:20 - 13:00</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-materia">
+                        <h5>📌 Lengua y Literatura</h5>
+                        <p><strong>Profesor/a:</strong> Mazala, Laura</p>
+                        <div style="margin-top: 10px; font-size: 0.88rem;">
+                            <p><strong>🗓️ Días de clase:</strong></p>
+                            <ul style="margin-left: 20px; list-style-type: disc;">
+                                <li><strong>Martes:</strong> 09:30 - 10:50</li>
+                                <li><strong>Jueves:</strong> 09:30 - 10:50</li>
+                                <li><strong>Lunes:</strong> 12:20 - 13:00</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-materia">
+                        <h5>📌 Matemática</h5>
+                        <p><strong>Profesor/a:</strong> Bayon, María / Supl. Gutierrez, Diego</p>
+                        <div style="margin-top: 10px; font-size: 0.88rem;">
+                            <p><strong>🗓️ Días de clase:</strong></p>
+                            <ul style="margin-left: 20px; list-style-type: disc;">
+                                <li><strong>Jueves:</strong> 08:00 - 09:20</li>
+                                <li><strong>Martes:</strong> 11:00 - 11:40</li>
+                                <li><strong>Miércoles:</strong> 11:40 - 12:20</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+        </div>
+
+        <!-- SECCIÓN DE TABLAS DE HORARIO SEMANAL -->
+        <section id="horario-semanal">
+            <h2 class="seccion-titulo">Tabla de Horario Semanal</h2>
+
+            <h3 style="margin-bottom: 15px;">2° 1° (Segunda Primera)</h3>
+            <div class="contenedor-tabla-horario" style="margin-bottom: 40px;">
+                <table class="tabla-horario">
+                    <thead>
+                        <tr>
+                            <th>Horario</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00 a 08:40</td>
+                            <td>HISTORIA<br><small>Vega Griselda</small></td>
+                            <td>GEOGRAFÍA<br><small>Ocedo, Genoveba</small></td>
+                            <td>MATEMÁTICA<br><small>Gonzáles, Rocío</small></td>
+                            <td>MATEMÁTICA<br><small>Gonzáles, Rocío</small></td>
+                            <td>GEOGRAFÍA<br><small>Ocedo, Genoveba</small></td>
+                        </tr>
+                        <tr>
+                            <td>08:40 a 09:20</td>
+                            <td>HISTORIA<br><small>Vega Griselda</small></td>
+                            <td>GEOGRAFÍA<br><small>Ocedo, Genoveba</small></td>
+                            <td>MATEMÁTICA<br><small>Gonzáles, Rocío</small></td>
+                            <td>MATEMÁTICA<br><small>Gonzáles, Rocío</small></td>
+                            <td>GEOGRAFÍA<br><small>Ocedo, Genoveba</small></td>
+                        </tr>
+                        <tr>
+                            <td>09:30 a 10:10</td>
+                            <td>CS. BIOL.<br><small>Choque, H. / Supl. Salazar Avelina</small></td>
+                            <td>FOR. E. Y C.<br><small>Martínez, María</small></td>
+                            <td>TEATRO<br><small>Bejarano, Nancy</small></td>
+                            <td>INGLÉS<br><small>Gelmetti, Silvana</small></td>
+                            <td>MATEMÁTICA<br><small>Gonzáles, Rocío</small></td>
+                        </tr>
+                        <tr>
+                            <td>10:10 a 10:50</td>
+                            <td>CS. BIOL.<br><small>Choque, H. / Supl. Salazar Avelina</small></td>
+                            <td>FOR. E. Y C.<br><small>Martínez, María</small></td>
+                            <td>TEATRO<br><small>Bejarano, Nancy</small></td>
+                            <td>INGLÉS<br><small>Gelmetti, Silvana</small></td>
+                            <td>TECNOLOGÍA<br><small>Guevara, Gustavo</small></td>
+                        </tr>
+                        <tr>
+                            <td>11:00 a 11:40</td>
+                            <td>LENG. Y LITER.<br><small>Janco María</small></td>
+                            <td>INGLÉS<br><small>Gelmetti, Silvana</small></td>
+                            <td>CS. BIOL.<br><small>Choque, H. / Supl. Salazar Avelina</small></td>
+                            <td>LENG. Y LITER.<br><small>Janco, María</small></td>
+                            <td>TECNOLOGÍA<br><small>Guevara, Gustavo</small></td>
+                        </tr>
+                        <tr>
+                            <td>11:40 a 12:20</td>
+                            <td>LENG. Y LITER.<br><small>Janco María</small></td>
+                            <td>LENG. Y LITER.<br><small>Janco María</small></td>
+                            <td>CS. BIOL.<br><small>Choque, H. / Supl. Salazar Avelina</small></td>
+                            <td>DANZA<br><small>Zapata, Nilda</small></td>
+                            <td>HISTORIA<br><small>Vega Griselda</small></td>
+                        </tr>
+                        <tr>
+                            <td>12:20 a 13:00</td>
+                            <td>FOR. E. Y C.<br><small>Martínez, María</small></td>
+                            <td>LENG. Y LITER.<br><small>Janco María</small></td>
+                            <td>TECNOLOGÍA<br><small>Guevara, Gustavo</small></td>
+                            <td>DANZA<br><small>Zapata, Nilda</small></td>
+                            <td>HISTORIA<br><small>Vega Griselda</small></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 style="margin-bottom: 15px;">2° 2° (Segunda Segunda)</h3>
+            <div class="contenedor-tabla-horario">
+                <table class="tabla-horario">
+                    <thead>
+                        <tr>
+                            <th>Horario</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00 a 08:40</td>
+                            <td>GEOGRAFÍA<br><small>Ocedo, Genoveba</small></td>
+                            <td>INGLÉS<br><small>Gelmetti, Silvana</small></td>
+                            <td>GEOGRAFÍA<br><small>Ocedo, Genoveba</small></td>
+                            <td>MATEMÁTICA<br><small>Bayon, M. / Supl. Gutierrez, D.</small></td>
+                            <td>TEATRO<br><small>Bejarano, Nancy</small></td>
+                        </tr>
+                        <tr>
+                            <td>08:40 a 09:20</td>
+                            <td>GEOGRAFÍA<br><small>Ocedo, Genoveba</small></td>
+                            <td>INGLÉS<br><small>Gelmetti, Silvana</small></td>
+                            <td>GEOGRAFÍA<br><small>Ocedo, Genoveba</small></td>
+                            <td>MATEMÁTICA<br><small>Bayon, M. / Supl. Gutierrez, D.</small></td>
+                            <td>TEATRO<br><small>Bejarano, Nancy</small></td>
+                        </tr>
+                        <tr>
+                            <td>09:30 a 10:10</td>
+                            <td>FOR. E. Y C.<br><small>Martínez, María</small></td>
+                            <td>LENG. Y LITER.<br><small>Mazala, Laura</small></td>
+                            <td>CS. BIOLÓGICAS<br><small>Choque, H. / Supl. Salazar Avelina</small></td>
+                            <td>LENG. Y LITER.<br><small>Mazala, Laura</small></td>
+                            <td>HISTORIA<br><small>Vega Griselda</small></td>
+                        </tr>
+                        <tr>
+                            <td>10:10 a 10:50</td>
+                            <td>FOR. E. Y C.<br><small>Martínez, María</small></td>
+                            <td>LENG. Y LITER.<br><small>Mazala, Laura</small></td>
+                            <td>CS. BIOLÓGICAS<br><small>Choque, H. / Supl. Salazar Avelina</small></td>
+                            <td>LENG. Y LITER.<br><small>Mazala, Laura</small></td>
+                            <td>HISTORIA<br><small>Vega Griselda</small></td>
+                        </tr>
+                        <tr>
+                            <td>11:00 a 11:40</td>
+                            <td>CS. BIOLÓGICAS<br><small>Choque, H. / Supl. Salazar Avelina</small></td>
+                            <td>MATEMÁTICA<br><small>Bayon, M. / Supl. Gutierrez, D.</small></td>
+                            <td>TECNOLOGÍA<br><small>Guevara, Gustavo</small></td>
+                            <td>INGLÉS<br><small>Gelmetti, Silvana</small></td>
+                            <td>FOR. E. Y C.<br><small>Martínez, María</small></td>
+                        </tr>
+                        <tr>
+                            <td>11:40 a 12:20</td>
+                            <td>CS. BIOLÓGICAS<br><small>Choque, H. / Supl. Salazar Avelina</small></td>
+                            <td>TECNOLOGÍA<br><small>Guevara, Gustavo</small></td>
+                            <td>MATEMÁTICA<br><small>Bayon, M. / Supl. Gutierrez, D.</small></td>
+                            <td>HISTORIA<br><small>Vega Griselda</small></td>
+                            <td>DANZA<br><small>Zapata, Nilda</small></td>
+                        </tr>
+                        <tr>
+                            <td>12:20 a 13:00</td>
+                            <td>LENG. Y LITER.<br><small>Mazala, Laura</small></td>
+                            <td>TECNOLOGÍA<br><small>Guevara, Gustavo</small></td>
+                            <td>MATEMÁTICA<br><small>Bayon, M. / Supl. Gutierrez, D.</small></td>
+                            <td>HISTORIA<br><small>Vega Griselda</small></td>
+                            <td>DANZA<br><small>Zapata, Nilda</small></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CONTENEDOR DE PROYECTOS -->
+        <section id="proyectos">
+            <h2 class="seccion-titulo">Proyectos Escolares</h2>
+            <div class="contenedor-proyectos">
+                <article class="tarjeta-proyecto">
+                    <h3>Proyecto 1: Elección de la Reina</h3>
+                    <p>Participación de los cursos 2° 1° y 2° 2° en el armado y elaboración de arreglos florales para la decoración del evento.</p>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <h3>Proyecto 2: Viaje Cultural a Jujuy</h3>
+                    <p>Salida pedagógica y recreativa enfocada en conocer en profundidad la historia, tradiciones y riqueza cultural de la provincia de Jujuy.</p>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <h3>Proyecto 3: Torneo Deportivo</h3>
+                    <p>Jornadas de integración deportiva en atletismo, vóley y fútbol escolar.</p>
+                </article>
+            </div>
+
+            <div class="contenedor-boton-volver">
+                <a href="#" class="btn-volver">⬆ Volver al Menú Principal</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- VENTANA MODAL PARA EXPANDIR FOTOS (LIGHTBOX) -->
+    <div id="modal-imagen" class="modal-visor" onclick="cerrarImagen()">
+        <span class="cerrar-modal">&times;</span>
+        <img class="contenido-modal" id="imagen-ampliada" alt="Vista previa">
+        <div id="texto-modal" class="pie-modal"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Escuela Secundaria</p>
+        <p style="margin-top: 8px;">
+            <a href="https://www.facebook.com/profile.php?id=100057082345529" target="_blank" rel="noopener noreferrer" class="link-footer-fb">
+                Visita nuestra página oficial en Facebook 🌐
+            </a>
+        </p>
+        <p>Lautaro Tapia, Tiago Martinez, Franco Castillo</p>
+    </footer>
+    <!-- SCRIPT DE JAVASCRIPT PARA EL ZOOM DE FOTOS -->
+    <script>
+        function abrirImagen(ruta, texto) {
+            var modal = document.getElementById("modal-imagen");
+            var imgAmpliada = document.getElementById("imagen-ampliada");
+            var textoModal = document.getElementById("texto-modal");
+            
+            modal.style.display = "flex";
+            imgAmpliada.src = ruta;
+            textoModal.innerText = texto;
+        }
+
+        function cerrarImagen() {
+            document.getElementById("modal-imagen").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
