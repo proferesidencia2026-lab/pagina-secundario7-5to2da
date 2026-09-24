@@ -1,0 +1,643 @@
+/* ==========================================================================
+   COLEGIO SECUNDARIO N°7 "MAESTRO MARIO HUMBERTO PÉREZ"
+   Hoja de estilos general
+   ========================================================================== */
+
+/* ==========================================================================
+   VARIABLES Y RESET
+   ========================================================================== */
+:root {
+    --verde-oscuro: #123524;
+    --verde-secundario: #1f5c3a;
+    --verde-claro: #dcefe3;
+    --blanco: #ffffff;
+    --gris-claro: #f4f4f4;
+    --texto-oscuro: #222222;
+
+    --sombra-suave: 0 4px 12px rgba(18, 53, 36, 0.12);
+    --sombra-fuerte: 0 8px 24px rgba(18, 53, 36, 0.18);
+    --radio-borde: 12px;
+    --transicion: all 0.3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+    color: var(--texto-oscuro);
+    background-color: var(--gris-claro);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ==========================================================================
+   TÍTULOS Y SUBTÍTULOS
+   ========================================================================== */
+h1, h2, h3, h4 {
+    font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+    color: var(--verde-oscuro);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--verde-secundario);
+    border-radius: 4px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--verde-secundario);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--texto-oscuro);
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+header {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    padding: 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+    box-shadow: var(--sombra-fuerte);
+}
+
+header img.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    background-color: var(--blanco);
+    border-radius: 50%;
+    padding: 6px;
+    box-shadow: var(--sombra-suave);
+}
+
+header h1 {
+    color: var(--blanco);
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+}
+
+header h2 {
+    color: var(--verde-claro);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+header h2::after {
+    display: none;
+}
+
+/* ==========================================================================
+   NAVEGACIÓN
+   ========================================================================== */
+nav {
+    background-color: var(--verde-secundario);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--sombra-suave);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--blanco);
+    font-weight: 600;
+    padding: 1rem 1.4rem;
+    transition: var(--transicion);
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: var(--verde-oscuro);
+    color: var(--verde-claro);
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--verde-claro);
+    transition: var(--transicion);
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+    width: 60%;
+}
+
+/* ==========================================================================
+   CONTENIDO / BANNER PRINCIPAL
+   ========================================================================== */
+.banner {
+    background: linear-gradient(135deg, var(--verde-oscuro), var(--verde-secundario));
+    color: var(--blanco);
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.banner h2 {
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.banner h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner p {
+    color: var(--verde-claro);
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+    font-size: 1.05rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background-color: var(--blanco);
+    padding: 2.5rem 2rem;
+    margin: 2.5rem 0;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicion);
+}
+
+section:hover {
+    box-shadow: var(--sombra-fuerte);
+}
+
+section ul li,
+section ol li {
+    padding: 0.4rem 0;
+    padding-left: 1.4rem;
+    position: relative;
+}
+
+section ul li::before {
+    content: "🌿";
+    position: absolute;
+    left: 0;
+    font-size: 0.9rem;
+}
+
+section ol {
+    padding-left: 1.5rem;
+}
+
+section ol li {
+    padding-left: 0.3rem;
+}
+
+/* Tablas informativas (horarios, profesores) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    overflow: hidden;
+    border-radius: var(--radio-borde);
+}
+
+table th,
+table td {
+    padding: 0.8rem 1rem;
+    text-align: center;
+    border: 1px solid var(--gris-claro);
+}
+
+table th {
+    background-color: var(--verde-secundario);
+    color: var(--blanco);
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--verde-claro);
+}
+
+table tr:hover {
+    background-color: #c9e6d5;
+    transition: var(--transicion);
+}
+
+/* ==========================================================================
+   TARJETAS (noticias, cursos, proyectos, actividades)
+   ========================================================================== */
+.tarjetas-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.tarjeta {
+    background-color: var(--gris-claro);
+    border-radius: var(--radio-borde);
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicion);
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 1.2rem 1.4rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-contenido h3 {
+    margin-bottom: 0.6rem;
+}
+
+.tarjeta-contenido p {
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+.tarjeta-fecha {
+    display: inline-block;
+    background-color: var(--verde-claro);
+    color: var(--verde-oscuro);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    margin-bottom: 0.6rem;
+    align-self: flex-start;
+}
+
+/* ==========================================================================
+   GALERÍA
+   ========================================================================== */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.galeria figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-suave);
+    position: relative;
+}
+
+.galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: var(--transicion);
+}
+
+.galeria figure:hover img {
+    transform: scale(1.08);
+}
+
+.galeria figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(18, 53, 36, 0.75);
+    color: var(--blanco);
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: var(--transicion);
+}
+
+.galeria figure:hover figcaption {
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   BOTONES
+   ========================================================================== */
+.btn {
+    display: inline-block;
+    background-color: var(--verde-secundario);
+    color: var(--blanco);
+    padding: 0.7rem 1.8rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: var(--transicion);
+    box-shadow: var(--sombra-suave);
+}
+
+.btn:hover {
+    background-color: var(--verde-oscuro);
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: var(--verde-oscuro);
+    border: 2px solid var(--verde-secundario);
+}
+
+.btn-secundario:hover {
+    background-color: var(--verde-claro);
+    color: var(--verde-oscuro);
+}
+
+/* ==========================================================================
+   FORMULARIO DE CONTACTO
+   ========================================================================== */
+.formulario-contacto {
+    max-width: 700px;
+    margin: 1.5rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.grupo-formulario label {
+    font-weight: 600;
+    color: var(--verde-secundario);
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea,
+.grupo-formulario select {
+    padding: 0.8rem 1rem;
+    border: 1px solid #cccccc;
+    border-radius: var(--radio-borde);
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--gris-claro);
+    transition: var(--transicion);
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus,
+.grupo-formulario select:focus {
+    outline: none;
+    border-color: var(--verde-secundario);
+    background-color: var(--blanco);
+    box-shadow: 0 0 0 3px rgba(31, 92, 58, 0.2);
+}
+
+.grupo-formulario textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.formulario-contacto .btn {
+    align-self: center;
+    margin-top: 0.5rem;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+    background-color: var(--verde-oscuro);
+    color: var(--verde-claro);
+    padding: 3rem 1.5rem 1.5rem;
+    margin-top: 3rem;
+}
+
+.footer-contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+footer h3 {
+    color: var(--blanco);
+    margin-bottom: 0.8rem;
+}
+
+footer p,
+footer a {
+    color: var(--verde-claro);
+    font-size: 0.95rem;
+}
+
+footer a:hover {
+    color: var(--blanco);
+    text-decoration: underline;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.footer-redes a {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transicion);
+}
+
+.footer-redes a:hover {
+    background-color: var(--verde-secundario);
+    transform: translateY(-3px);
+}
+
+.footer-inferior {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 0.85rem;
+    color: rgba(220, 239, 227, 0.7);
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    main {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 2rem 1.5rem;
+    }
+
+    .banner {
+        padding: 3rem 1.5rem;
+    }
+}
+
+/* Celulares grandes / tablets chicas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 0.8rem 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .tarjetas-contenedor,
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header h2 {
+        font-size: 0.95rem;
+    }
+
+    section {
+        padding: 1.5rem 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .banner h2 {
+        font-size: 1.6rem;
+    }
+
+    .banner p {
+        font-size: 0.95rem;
+    }
+
+    .tarjetas-contenedor,
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    table th,
+    table td {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.4rem;
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+    }
+}
